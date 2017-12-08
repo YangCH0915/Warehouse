@@ -1,0 +1,102 @@
+2017-12-07 15:41:00 [main] DEBUG c.yunji.morn.dao.BookDao.queryById : 
+ ==>  Preparing: SELECT book_id, name, number FROM book WHERE book_id = ?  
+2017-12-07 15:41:00 [main] DEBUG c.yunji.morn.dao.BookDao.queryById : 
+ ==> Parameters: 1000(Long) 
+2017-12-07 15:41:00 [main] DEBUG c.yunji.morn.dao.BookDao.queryById : 
+ <==      Total: 1 
+2017-12-07 15:41:00 [main] DEBUG com.yunji.morn.dao.BookDao.queryAll : 
+ ==>  Preparing: SELECT book_id, name, number FROM book ORDER BY book_id LIMIT ?, ?  
+2017-12-07 15:41:00 [main] DEBUG com.yunji.morn.dao.BookDao.queryAll : 
+ ==> Parameters: 0(Integer), 4(Integer) 
+2017-12-07 15:41:00 [main] DEBUG com.yunji.morn.dao.BookDao.queryAll : 
+ <==      Total: 4 
+2017-12-07 15:41:00 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==>  Preparing: UPDATE book SET number = number - 1 WHERE book_id = ? AND number > 0  
+2017-12-07 15:41:00 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==> Parameters: 1000(Long) 
+2017-12-07 15:41:00 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ <==    Updates: 1 
+2017-12-07 15:44:15 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==>  Preparing: INSERT ignore INTO appointment (book_id, student_id) VALUES (?, ?)  
+2017-12-07 15:44:15 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==> Parameters: 1000(Long), 12345678910(Long) 
+2017-12-07 15:44:15 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ <==    Updates: 1 
+2017-12-07 15:44:15 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ ==>  Preparing: SELECT a.book_id, a.student_id, a.appoint_time, b.book_id "book.book_id", b.`name` "book.name", b.number "book.number" FROM appointment a INNER JOIN book b ON a.book_id = b.book_id WHERE a.book_id = ? AND a.student_id = ?  
+2017-12-07 15:44:15 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ ==> Parameters: 1000(Long), 12345678910(Long) 
+2017-12-07 15:44:15 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ <==      Total: 1 
+2017-12-07 16:24:14 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==>  Preparing: INSERT ignore INTO appointment (book_id, student_id) VALUES (?, ?)  
+2017-12-07 16:24:14 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==> Parameters: 1000(Long), 12345678910(Long) 
+2017-12-07 16:24:14 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ <==    Updates: 0 
+2017-12-07 16:24:14 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ ==>  Preparing: SELECT a.book_id, a.student_id, a.appoint_time, b.book_id "book.book_id", b.`name` "book.name", b.number "book.number" FROM appointment a INNER JOIN book b ON a.book_id = b.book_id WHERE a.book_id = ? AND a.student_id = ?  
+2017-12-07 16:24:14 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ ==> Parameters: 1000(Long), 12345678910(Long) 
+2017-12-07 16:24:14 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ <==      Total: 1 
+2017-12-07 16:24:14 [main] DEBUG c.yunji.morn.dao.BookDao.queryById : 
+ ==>  Preparing: SELECT book_id, name, number FROM book WHERE book_id = ?  
+2017-12-07 16:24:14 [main] DEBUG c.yunji.morn.dao.BookDao.queryById : 
+ ==> Parameters: 1000(Long) 
+2017-12-07 16:24:14 [main] DEBUG c.yunji.morn.dao.BookDao.queryById : 
+ <==      Total: 1 
+2017-12-07 16:24:14 [main] DEBUG com.yunji.morn.dao.BookDao.queryAll : 
+ ==>  Preparing: SELECT book_id, name, number FROM book ORDER BY book_id LIMIT ?, ?  
+2017-12-07 16:24:14 [main] DEBUG com.yunji.morn.dao.BookDao.queryAll : 
+ ==> Parameters: 0(Integer), 4(Integer) 
+2017-12-07 16:24:14 [main] DEBUG com.yunji.morn.dao.BookDao.queryAll : 
+ <==      Total: 4 
+2017-12-07 16:24:14 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==>  Preparing: UPDATE book SET number = number - 1 WHERE book_id = ? AND number > 0  
+2017-12-07 16:24:14 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==> Parameters: 1000(Long) 
+2017-12-07 16:24:14 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ <==    Updates: 1 
+2017-12-07 16:30:38 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==>  Preparing: UPDATE book SET number = number - 1 WHERE book_id = ? AND number > 0  
+2017-12-07 16:30:38 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==> Parameters: 1001(Long) 
+2017-12-07 16:30:38 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ <==    Updates: 1 
+2017-12-07 16:30:38 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==>  Preparing: INSERT ignore INTO appointment (book_id, student_id) VALUES (?, ?)  
+2017-12-07 16:30:38 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==> Parameters: 1001(Long), 12345678910(Long) 
+2017-12-07 16:30:38 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ <==    Updates: 1 
+2017-12-07 16:30:38 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ ==>  Preparing: SELECT a.book_id, a.student_id, a.appoint_time, b.book_id "book.book_id", b.`name` "book.name", b.number "book.number" FROM appointment a INNER JOIN book b ON a.book_id = b.book_id WHERE a.book_id = ? AND a.student_id = ?  
+2017-12-07 16:30:38 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ ==> Parameters: 1001(Long), 12345678910(Long) 
+2017-12-07 16:30:38 [main] DEBUG c.y.m.d.A.queryByKeyWithBook : 
+ <==      Total: 1 
+2017-12-07 16:31:00 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==>  Preparing: UPDATE book SET number = number - 1 WHERE book_id = ? AND number > 0  
+2017-12-07 16:31:00 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==> Parameters: 1001(Long) 
+2017-12-07 16:31:00 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ <==    Updates: 1 
+2017-12-07 16:31:00 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==>  Preparing: INSERT ignore INTO appointment (book_id, student_id) VALUES (?, ?)  
+2017-12-07 16:31:00 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==> Parameters: 1001(Long), 12345678910(Long) 
+2017-12-07 16:31:00 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ <==    Updates: 0 
+2017-12-07 16:37:14 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==>  Preparing: UPDATE book SET number = number - 1 WHERE book_id = ? AND number > 0  
+2017-12-07 16:37:14 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ ==> Parameters: 1001(Long) 
+2017-12-07 16:37:14 [main] DEBUG c.y.morn.dao.BookDao.reduceNumber : 
+ <==    Updates: 1 
+2017-12-07 16:37:14 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==>  Preparing: INSERT ignore INTO appointment (book_id, student_id) VALUES (?, ?)  
+2017-12-07 16:37:14 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ ==> Parameters: 1001(Long), 12345678910(Long) 
+2017-12-07 16:37:14 [main] DEBUG c.y.m.d.A.insertAppointment : 
+ <==    Updates: 0 
